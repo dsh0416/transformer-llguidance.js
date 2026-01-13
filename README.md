@@ -187,9 +187,9 @@ async function loadTokenizerData(modelId: string, options?: {
 
 1. Model produces logits
 2. GuidanceLogitsProcessor.process() called
-  1. Try top-5 tokens with is_token_allowed()
-  2. If hit: mask all except winner
-  3. If miss: compute full mask with get_token_mask()
+    1. Try top-5 tokens with is_token_allowed()
+    2. If hit: mask all except winner
+    3. If miss: compute full mask with get_token_mask()
 3. Sample from modified logits
 4. Call processor.onToken() with sampled token
 5. Repeat until processor.canStop() or max tokens
