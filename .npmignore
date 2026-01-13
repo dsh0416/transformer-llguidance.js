@@ -1,0 +1,23 @@
+# Source files
+src/
+crates/
+tests/
+examples/
+
+# Config files
+*.config.ts
+tsconfig.json
+Cargo.toml
+Cargo.lock
+
+# Development
+.git/
+.github/
+.vscode/
+.idea/
+
+# Misc
+*.md
+!README.md
+coverage/
+
