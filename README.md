@@ -1,4 +1,4 @@
-# llguidance-js
+# transformers-llguidance
 
 Structured output generation for [transformer.js](https://github.com/huggingface/transformers.js) using [llguidance](https://github.com/guidance-ai/llguidance).
 
@@ -15,7 +15,7 @@ This library enables constrained text generation in the browser and Node.js by i
 ## Installation
 
 ```bash
-npm install llguidance-js
+npm install transformers-llguidance
 ```
 
 ## Quick Start
@@ -26,7 +26,7 @@ import {
   GuidanceParser,
   GuidanceLogitsProcessor,
   extractTokenizerData,
-} from 'llguidance-js';
+} from 'transformers-llguidance';
 
 // Load a model
 const generator = await pipeline('text-generation', 'Xenova/gpt2');
